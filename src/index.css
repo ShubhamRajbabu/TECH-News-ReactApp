@@ -1,0 +1,164 @@
+h1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 300px; /* Set maximum width */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Center the card horizontally */
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 768px) {
+  .card {
+    max-width: 400px; /* Adjusted for larger screens */
+  }
+}
+
+/* Additional styles for laptop screens */
+@media (min-width: 1024px) {
+  .card {
+    max-width: 600px; /* Further adjusted for laptop screens */
+  }
+
+  .card-title {
+    font-size: 2rem; /* Larger font size for titles */
+  }
+
+  .card-description {
+    font-size: 1.2rem; /* Larger font size for descriptions */
+  }
+
+  .card-button {
+    padding: 10px 20px; /* Larger padding for buttons */
+    font-size: 1.2rem; /* Larger font size for buttons */
+  }
+}
+
+.links {
+  width: full;
+  display: flex;
+  justify-content: space-between;
+}
+.search-container {
+  width: 100%;
+  max-width: 400px; /* Set maximum width */
+  margin: 20px auto; /* Center the search bar horizontally */
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Media queries for responsive design */
+@media (min-width: 576px) {
+  .search-container {
+    max-width: 600px; /* Adjusted for mobile screens */
+  }
+
+  .search-box {
+    font-size: 14px; /* Smaller font size for mobile screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-container {
+    max-width: 800px; /* Adjusted for laptops */
+  }
+
+  .search-box {
+    font-size: 18px; /* Larger font size for laptops */
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+}
+
+.page-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-button.active {
+  background-color: #0056b3;
+}
+
+.page-button.prev,
+.page-button.next {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.page-button.prev:hover,
+.page-button.next:hover {
+  background-color: #ccc;
+}
+
+.page-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
